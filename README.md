@@ -6,3 +6,6 @@ Link: [https://developer.mozilla.org/es/docs/Web/API/Web_components](https://dev
 
 # Ejemplos de Web Components creados por MDN:
 Link: [https://github.com/mdn/web-components-examples](https://github.com/mdn/web-components-examples)
+
+# Sesión basada en:
+Link [https://lenguajejs.com/webcomponents/](https://lenguajejs.com/webcomponents/)
