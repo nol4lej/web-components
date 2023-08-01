@@ -1,3 +1,19 @@
+const template = () => {
+    const template = document.createElement("template")
+    template.innerHTML = `
+        <style>
+            h1{
+                color: red;
+            }
+        </style>
+        <div>
+            <h1 id="titulo">Mi template</h1>
+            <button id="btn">Click</button>
+        </div>
+    `
+    return template
+}
+
 export class MiEtiquetaTemplate extends HTMLElement{
 
     static contador = 0
@@ -13,25 +29,8 @@ export class MiEtiquetaTemplate extends HTMLElement{
     }
 
     renderizar(){
-        const html = this.template().content.cloneNode((true))
+        const html = template().content.cloneNode((true))
         this.shadowRoot.appendChild(html)
-    }
-
-    template(){
-        const numero = this.getAttribute("numero")
-        const template = document.createElement("template")
-        template.innerHTML = `
-            <style>
-                h1{
-                    color: red;
-                }
-            </style>
-            <div>
-                <h1 id="titulo">Mi template</h1>
-                <button id="btn">Click</button>
-            </div>
-        `
-        return template
     }
 
     manejarBoton(){
